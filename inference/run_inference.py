@@ -26,7 +26,7 @@ import inference_config as config
 # ===================
 
 # Restrict tensorflow GPU memory usage
-os.environ["CUDA_VISIBLE_DEVICES"]=str(-1)
+# os.environ["CUDA_VISIBLE_DEVICES"]=str(0)
 import tensorflow as tf
 gpu_devices = tf.config.experimental.list_physical_devices('GPU')
 for k in range(len(gpu_devices)):

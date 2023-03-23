@@ -10,7 +10,7 @@
 # ==============================================
 
 # Enable GPU compute?
-useGPU = False
+useGPU = True
 
 # Which GPU to use (set to 0 if only one GPU)
 gpu_num = 0
@@ -24,8 +24,8 @@ Nruns = 1
 
 # task = "imagenet"
 # task = "cifar100"
-# task = "cifar10"
-task = "mnist"
+task = "cifar10"
+# task = "mnist"
 
 # Choose neural network model based on task
 if task == "imagenet":

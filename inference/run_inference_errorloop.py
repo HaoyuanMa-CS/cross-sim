@@ -41,7 +41,7 @@ if output_directory is not None and not os.path.isdir(output_directory):
 # ===================
 
 # Restrict tensorflow GPU memory usage
-os.environ["CUDA_VISIBLE_DEVICES"]=str(-1)
+# os.environ["CUDA_VISIBLE_DEVICES"]=str(-1)
 import tensorflow as tf
 gpu_devices = tf.config.experimental.list_physical_devices('GPU')
 for k in range(len(gpu_devices)):
